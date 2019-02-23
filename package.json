@@ -1,0 +1,78 @@
+{
+  "name": "shawshank-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hemaoptical/shawshank-api.git",
+  "author": "MofeLee <mofe@me.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@alicloud/sms-sdk": "^1.1.4",
+    "@babel/parser": "^7.1.0",
+    "@mofe/wait": "^1.0.0",
+    "ali-oss": "^6.0.1",
+    "bluebird": "^3.5.2",
+    "bookshelf": "^0.13.3",
+    "content-type": "^1.0.4",
+    "date-fns": "^1.29.0",
+    "faker": "^4.1.0",
+    "file-type": "^9.0.0",
+    "formidable": "^1.2.1",
+    "glob": "^7.1.3",
+    "he": "^1.2.0",
+    "joi": "^13.6.0",
+    "js-yaml": "^3.12.0",
+    "jsonwebtoken": "^8.3.0",
+    "kcors": "^2.2.2",
+    "knex": "^0.15.2",
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.11",
+    "mime-types": "^2.1.20",
+    "nunjucks": "^3.1.3",
+    "oss": "^0.0.1",
+    "p-finally": "^1.0.0",
+    "p-props": "^1.2.0",
+    "path-to-regexp": "^2.4.0",
+    "pg": "^7.4.3",
+    "pinyin": "^2.8.3",
+    "plantuml-encoder": "^1.2.5",
+    "raven": "^2.6.4",
+    "raw-body": "^2.3.3",
+    "redis": "^2.8.0",
+    "seedrandom": "^2.4.4",
+    "signale": "^1.3.0",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "seeds": "node seeds/index.js",
+    "dev": "source .env && DEBUG=*,-nodemon:*,-nodemon,-snapdragon:* nodemon -e js,yaml index.js",
+    "doc": "open http://localhost:8080 && docker run --rm -p 8080:8080 -e API_URL=http://localhost:8000/swagger.json swaggerapi/swagger-ui",
+    "graph": "node ./docs/renderGraph.js",
+    "test": "jest --detectOpenHandles --forceExit",
+    "test:coverage": "jest --coverage --runInBand --forceExit --detectOpenHandles --verbose",
+    "test:coverage:open": "jest --coverage --runInBand --forceExit --detectOpenHandles --verbose && open ./coverage/lcov-report/index.html",
+    "test:watch": "jest --watch",
+    "migrate": "knex migrate:latest"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "jest-coverage-badges": "https://github.com/mofelee/jest-coverage-badges.git#master",
+    "supertest": "^3.3.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/test/!(helpers)/*.js"
+    ],
+    "coverageReporters": [
+      "json-summary",
+      "text-summary",
+      "text",
+      "lcov"
+    ],
+    "bail": true,
+    "testEnvironment": "node"
+  }
+}

@@ -1,0 +1,29 @@
+type: object
+description: 门店
+example:
+  id: 1
+properties:
+  id:
+    type: integer
+    description: 门店id
+  name:
+    type: string
+    description: 门店地址
+  address:
+    type: string
+    description: 门店名称
+  phone_number:
+    type: string
+    description: 联系电话
+  organization_id:
+    type: integer
+    description: 机构信息关联id
+  organization:
+    $ref: '#/components/schemas/Organization'
+    description: 机构信息
+  created_at:
+    type: date-time
+    description: 创建时间
+  updated_at:
+    type: date-time
+    description: 更新时间

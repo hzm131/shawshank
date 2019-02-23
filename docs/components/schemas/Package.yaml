@@ -1,0 +1,26 @@
+type: object
+description: 包装盒表
+example:
+  id: 1
+  uuid: '3cb2fd28-a478-4606-ac2b-92ce06f7a136'
+  created_at: '2018-06-06T06:06:06Z'
+  updated_at: '2018-06-06T06:06:06Z'
+properties:
+  id:
+    type: integer
+    description: 包装盒ID
+  uuid:
+    type: string
+    description: 包装盒编码
+  containes_id:
+    type: int
+    description: 货柜表id
+  containes:
+    $ref: '#/components/schemas/Container'
+    description: 货柜
+  created_at:
+    type: date-time
+    description: 创建时间
+  updated_at:
+    type: date-time
+    description: 更新时间

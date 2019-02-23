@@ -1,0 +1,56 @@
+type: object
+description: 人员信息
+example:
+  id: 1
+  name: 张三
+  abbreviation: ZS
+  mobile: 18612341234
+  email: zs@gmail.com
+  sex: 0
+  job: 学生
+  birthday: '2008-06-06'
+  birthday_infer: '2008-06-06'
+  identification_number: '450881199412087728'
+  educational_background: '初中'
+  created_at: '2018-06-06T06:06:06Z'
+  updated_at: '2018-06-06T06:06:06Z'
+properties:
+  id:
+    type: integer
+    description: 人员ID
+  name:
+    type: string
+    description: 名字
+  abbreviation:
+    type: string
+    description: 简称/拼音，速查用
+  mobile:
+    type: string
+    description: 手机号码
+  email:
+    type: string
+    description: 邮箱
+  sex:
+    type: integer
+    description: 性别 0:男； 1:女；
+  job:
+    type: string
+    description: 职业
+  birthday:
+    type: string
+    description: 生日
+  birthday_infer:
+    type: string
+    description: 从年龄推断的出生日期
+  identification_number:
+    type: string
+    description: 身份证号
+  educational_background:
+    type: string
+    description: 教育背景
+  created_at:
+    type: date-time
+    description: 创建时间
+  updated_at:
+    type: date-time
+    description: 更新时间

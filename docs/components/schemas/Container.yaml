@@ -1,0 +1,20 @@
+type: object
+description: 货柜表
+example:
+  id: 1
+  name: '货柜'
+  created_at: '2018-06-06T06:06:06Z'
+  updated_at: '2018-06-06T06:06:06Z'
+properties:
+  id:
+    type: integer
+    description: 货柜id
+  name:
+    type: string
+    description: 货柜名称
+  created_at:
+    type: date-time
+    description: 创建时间
+  updated_at:
+    type: date-time
+    description: 更新时间

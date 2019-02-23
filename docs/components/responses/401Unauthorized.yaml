@@ -1,0 +1,5 @@
+description: 认证失败
+content:
+  application/json:
+    schema:
+      $ref: '#/components/responses/ErrorObject'

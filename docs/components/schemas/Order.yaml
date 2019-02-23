@@ -1,0 +1,41 @@
+type: object
+description: 销售订单表
+example:
+  id: 1
+properties:
+  id:
+    type: integer
+    description: 销售订单id
+  customer_id:
+    type: integer
+    description: 客户订单表
+  customer:
+    $ref: '#/components/schemas/Customer'
+    description: 客户表
+  assembler_id:
+    type: integer
+    description: 装配师
+  assembler:
+    $ref: '#/components/schemas/Assembler'
+    description: 眼镜装配师
+  salesman_id:
+    type: integer
+    description: 销售员/导购
+  salesman:
+    $ref: '#/components/schemas/Salesman'
+    description: 销售员/导购
+  prescription_id:
+    type: integer
+    description: 验光单表
+  prescription:
+    $ref: '#/components/schemas/Prescription'
+    description: 验光单
+  total_price:
+    type: number
+    description: 总价
+  store_id:
+    type: inteage
+    description: 门店id
+  store:
+    $ref: '#/components/schemas/Store'
+    description: 门店

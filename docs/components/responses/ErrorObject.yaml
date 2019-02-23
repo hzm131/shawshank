@@ -1,0 +1,12 @@
+type: object
+required:
+  - code
+  - message
+properties:
+  code:
+    type: integer
+    format: int32
+    description: 错误码
+  message:
+    type: string
+    description: 错误描述

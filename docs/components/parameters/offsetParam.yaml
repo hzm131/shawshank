@@ -1,0 +1,9 @@
+name: offset
+in: query
+description: 跳过当前数量的对象
+required: true
+schema:
+  type: integer
+  format: int32
+  minimum: 0
+  default: 0

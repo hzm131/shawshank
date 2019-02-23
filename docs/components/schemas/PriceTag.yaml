@@ -1,0 +1,26 @@
+type: object
+description: 价标签
+example:
+  id: 1
+properties:
+  id:
+    type: integer
+    description: 价签id
+  product_instance_id:
+    type: integer
+    description: 产品id
+  product_instance:
+    $ref: '#/components/schemas/ProductInstance'
+    description: 商品实例
+  uuid:
+    type: string
+    description: 价签uuid
+  price:
+    type: integer
+    description: 标价
+  created_at:
+    type: date-time
+    description: 创建时间
+  updated_at:
+    type: date-time
+    description: 更新时间

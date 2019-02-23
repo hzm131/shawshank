@@ -1,0 +1,23 @@
+type: object
+description: 客户表
+example:
+  id: 1
+properties:
+  id:
+    type: integer
+    description: 客户id
+  member_card_number:
+    type: string
+    description: 会员卡号
+  person_id:
+    type: integer
+    description: 用户对应的人员信息
+  person:
+    $ref: '#/components/schemas/Person'
+    description: 人员信息表
+  created_at:
+    type: date-time
+    description: 创建时间
+  updated_at:
+    type: date-time
+    description: 更新时间

@@ -1,0 +1,11 @@
+description: '操作成功'
+content:
+  application/json:
+    schema:
+      example:
+        message: 操作成功
+      type: object
+      properties:
+        message:
+          type: string
+          description: 错误描述

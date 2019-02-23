@@ -1,0 +1,30 @@
+{
+    "name": "oss"
+  , "author":{
+    "name": "fantasyni",
+    "email": "fantasyni@163.com"
+  }
+  , "description": "Aliyun OSS node.js SDK and Command-Line Tool"
+  , "version": "0.0.1"
+  , "private": false
+  , "main" : "./lib/oss.js"
+  , "keywords" : "aliyun oss node.js sdk command line "
+  , "dependencies": {
+     "async" : ">0.0.1"
+    , "request" : ">0.0.1"
+    , "xml2js" : "*"
+    , "mime" : "*"
+    , "data2xml" : "*"
+    , "commander" : ">0.0.1"
+    , "progress" : ">0.0.1"
+    , "ndir" : "0.1.2"
+    , "oppressor" : "*"
+  },
+  "devDependencies": {
+    "should": ">=0.6.0",
+    "mocha": ">=0.14.1"
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}

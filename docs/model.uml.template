@@ -1,0 +1,24 @@
+@startuml
+
+skinparam monochrome true
+
+{% for k, v in components.schemas %}
+object {{ k}} {
+  {{ v.description if v.description else ''  }}
+  {% for kk,  vv in v.properties -%}
+  {%- if vv.type -%}
+      {{ kk }} = "{{ vv.type }}{{ ' - ' + vv.description if vv.description else ''  }}"
+  {% endif -%}
+  {% endfor -%}
+}
+{%- endfor %}
+
+{% for k, v in components.schemas -%}
+  {% for kk,  vv in v.properties -%}
+{%- if vv.$ref -%}
+{{ vv.$ref | replace("#/components/schemas/", "") }} <-- {{ k }} :  {{ kk }}{{ '-' + vv.description if vv.description else ''  }}
+{% endif -%}
+  {% endfor -%}
+{%- endfor %}
+
+@enduml

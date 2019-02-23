@@ -1,0 +1,20 @@
+type: object
+description: 验光师
+example:
+  id: 1
+properties:
+  id:
+    type: integer
+    description: 验光师id
+  person_id:
+    type: integer
+    description: 用户对应的人员信息
+  person:
+    $ref: '#/components/schemas/Person'
+    description: 人员信息表
+  created_at:
+    type: date-time
+    description: 创建时间
+  updated_at:
+    type: date-time
+    description: 更新时间

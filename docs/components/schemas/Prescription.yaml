@@ -1,0 +1,99 @@
+type: object
+description: 验光单
+example:
+  id: 1
+  use_for: 0
+  vertex_distance: 12
+  right_sphere: -200
+  left_sphere: -225
+  right_cylinder: -50
+  left_cylinder: -75
+  right_cylinder_axis: 180
+  left_cylinder_axis: 160
+  right_corrected_vision: 5.0
+  left_corrected_vision: 5.0
+  right_papillary_distance: 32
+  left_papillary_distance: 32
+  right_add: 0
+  left_add: 0
+  right_prism: 0
+  right_prism_base: -1
+  left_prism: 0
+  left_prism_base: -1
+  expires_at: '2018-08-06T06:06:06Z'
+  created_at: '2018-06-06T06:06:06Z'
+  updated_at: '2018-06-06T06:06:06Z'
+properties:
+  id:
+    type: integer
+    description: 验光单ID
+  optometrist_id:
+    type: integer
+    description: 验光师id
+  optometrist:
+    $ref: '#/components/schemas/Optometrist'
+    description: 验光师
+  use_for:
+    type: integer
+    description: 用途 远用：0  近用：1
+  vertex_distance:
+    type: integer
+    description: 镜眼距、顶点距、镜角距VD 一般眼镜12mm角膜接触0mm
+  right_sphere:
+    type: integer
+    description: 右眼球镜度SPH
+  left_sphere:
+    type: integer
+    description: 左眼球镜度SPH
+  right_cylinder:
+    type: integer
+    description: 右眼柱镜度CYL
+  left_cylinder:
+    type: integer
+    description: 左眼柱镜度CYL
+  right_cylinder_axis:
+    type: integer
+    description: 右眼柱镜轴位Axis
+  left_cylinder_axis:
+    type: integer
+    description: 左眼柱镜轴位Axis
+  right_corrected_vision:
+    type: number
+    description: 右眼矫正视力V
+  left_corrected_vision:
+    type: number
+    description: 左眼矫正视力V
+  right_papillary_distance:
+    type: integer
+    description: 右眼瞳距
+  left_papillary_distance:
+    type: integer
+    description: 左眼瞳距
+  right_add:
+    type: integer
+    description: 右眼下加光
+  left_add:
+    type: integer
+    description: 左眼下加光
+  right_prism:
+    type: integer
+    description: 右眼棱镜度
+  right_prism_base:
+    type: integer
+    description: '右眼棱镜度基底 上：0 右：1 下：2 左：3  无数据: -1'
+  left_prism:
+    type: integer
+    description: 左眼棱镜度
+  left_prism_base:
+    type: integer
+    description: '左眼棱镜度基底 上：0 右：1 下：2 左：3 无数据：-1'
+  expires_at:
+    type: date-time
+    description: 验光度数过期时间，由验光师评估当前用户的度数需多久复测
+  created_at:
+    type: date-time
+    description: 创建时间
+  updated_at:
+    type: date-time
+    description: 更新时间
+

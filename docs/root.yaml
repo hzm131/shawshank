@@ -1,0 +1,51 @@
+openapi: "3.0.1"
+info:
+  version: {{ pkg.version }}
+  title: {{ pkg.name }}
+  description: |
+    ## Shawshank API 文档
+
+    ## 1. 遵循 Principal
+    [https://github.com/hemaoptical/principal](https://github.com/hemaoptical/principal)
+
+    ## 2. API 风格以及一些规则
+    [https://github.com/hemaoptical/hema-style-guide](https://github.com/hemaoptical/hema-style-guide)
+
+    ## 3. 错误对照表
+    [https://github.com/hemaoptical/shawshank-api/blob/master/lib/errors.js](https://github.com/hemaoptical/shawshank-api/blob/master/lib/errors.js)
+
+    ## 4. QA
+
+    #### 4.1 如何登陆 shawshank-api
+
+    [wiki](https://github.com/hemaoptical/shawshank-api/wiki/%E5%A6%82%E4%BD%95%E7%99%BB%E9%99%86api)
+
+    ## 5. 项目相关文档
+    - [Joi](https://github.com/hapijs/joi/blob/v13.4.0/API.md)
+    - [OpenAPI GitHub](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md)
+    - [OpenAPI](https://swagger.io/docs/specification)
+    - [Koa](http://koajs.com/)
+
+  contact:
+    email: it@hemayanjing.com
+servers:
+  - url: http://localhost:8000/
+tags:
+  - name: User
+    description: 用户
+  - name: Session
+    description: 会话
+  - name: Organization
+    description: 机构
+paths: {}
+components:
+  securitySchemes:
+    token:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: |
+        - 登录方法参考: https://github.com/hemaoptical/shawshank-api/wiki/%E5%A6%82%E4%BD%95%E7%99%BB%E9%99%86api
+        - 格式: Bearer [access_token]
+
+  schemas: {}

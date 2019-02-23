@@ -1,0 +1,17 @@
+type: object
+description: 订单产品项
+example:
+  id: 1
+properties:
+  id:
+    type: integer
+    description: 销售订单id
+  order_id:
+    type: integer
+    description: 订单id
+  order:
+    $ref: '#/components/schemas/Order'
+    description: 销售订单表
+  product_instance_id:
+    type: integer
+    description: 对应的产品实例id

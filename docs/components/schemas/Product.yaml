@@ -1,0 +1,40 @@
+type: object
+description: 商品数据表
+example:
+  id: 1
+  created_at: '2018-06-06T06:06:06Z'
+  updated_at: '2018-06-06T06:06:06Z'
+properties:
+  id:
+    type: integer
+    description: 商品数据ID
+  barcode:
+    type: string
+    description: 识别码/条码
+  abbreviation:
+    type: string
+    description: 助记码
+  name:
+    type: string
+    description: 名称
+  type:
+    type: integer
+    description: '枚举类型; 其他:0 太阳镜:1 镜框:2 镜片:3 美瞳:4 隐形眼镜:5 护理液:6 老花镜:7'
+  count:
+    type: integer
+    description: 数量
+  purchase_price:
+    type: number
+    description: 采购单价 采购时未打折之前每个商品的价格
+  purchase_order_id:
+    type: integer
+    description: 对应的采购单ID
+  purchase_order:
+    $ref: '#/components/schemas/PurchaseOrder'
+    description: 产品来源的采购单
+  created_at:
+    type: date-time
+    description: 创建时间
+  updated_at:
+    type: date-time
+    description: 更新时间

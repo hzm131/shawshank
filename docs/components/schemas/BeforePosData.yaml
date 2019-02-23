@@ -1,0 +1,217 @@
+type: object
+description: 老销售系统数据表
+example:
+properties:
+  id:
+    type: integer
+    description: 表id
+  lsh:
+    type: integer
+    description: 订单ID
+  bm:
+    type: string
+    description:
+  kh:
+    type: string
+    description: 镜片单位
+  name:
+    type: string
+    description: 姓名
+  bz:
+    type: string
+    description:
+  pjrq:
+    type: string
+    description: 配镜日期
+  jjmc:
+    type: string
+    description: 镜架名称 （名称）
+  jpmc:
+    type: string
+    description: 镜片名称
+  jjjg:
+    type: string
+    description: 镜架价格
+  jpjp:
+    type: string
+    description: 镜片价格
+  sjjg:
+    type: string
+    description:
+  age:
+    type: string
+    description: 年龄
+  sex:
+    type: string
+    description: 性别
+  telephone:
+    type: string
+    description: 手机
+  zhiye:
+    type: string
+    description: 职业
+  job:
+    type: string
+    description: 没有使用，职业
+  address:
+    type: string
+    description: 没有使用， 地址
+  note1:
+    type: string
+    description: 备注
+  yyYqiujing:
+    type: string
+    description:  球镜 右
+  yyZqiujing:
+    type: string
+    description: 球镜 左
+  yyYzhujing:
+    type: string
+    description: 柱镜 右
+  yyZzhujing:
+    type: string
+    description: 柱镜 左
+  yyYzhouwei:
+    type: string
+    description: 轴位 右
+  yyZzhouwei:
+    type: string
+    description: 轴位 左
+  yyTongju:
+    type: string
+    description: 瞳距 右
+  yyYshiju:
+    type: string
+    description: 下加光 右
+  yyZshiju:
+    type: string
+    description: 下加光 左
+  yyYjiaozheng:
+    type: string
+    description: 矫正视力 右
+  yyZjiaozheng:
+    type: string
+    description: 矫正视力 左
+  jyYqiujing:
+    type: string
+    description: 瞳高 右
+  jyZqiujing:
+    type: string
+    description: 瞳高 左
+  jyYzhujing:
+    type: string
+    description:
+  jyZzhujing:
+    type: string
+    description:
+  jyZzhouwei:
+    type: string
+    description:
+  jyZshouwei:
+    type: string
+    description:
+  jyTongju:
+    type: string
+    description:
+  JYyTONGJU:
+    type: string
+    description:  瞳距 左
+  jyYshiju:
+    type: string
+    description: 镜片折扣
+  jyZshiju:
+    type: string
+    description: 镜片优惠价
+  jyYjiaozheng:
+    type: string
+    description: 镜架折扣
+  jyZjiaozheng:
+    type: string
+    description: 镜架优惠价
+  yzZqiujing:
+    type: string
+    description: 配镜师
+  yzYzhujing:
+    type: string
+    description: 质检员
+  yxZzhujing:
+    type: string
+    description: 戴镜史
+  yxYzhouwei:
+    type: string
+    description:
+  yzZzhouwei:
+    type: string
+    description:
+  yxTongju:
+    type: string
+    description:
+  yxYshiju:
+    type: string
+    description:
+  yxZshiju:
+    type: string
+    description:
+  yxZjiaozheng:
+    type: string
+    description:
+  yxYqiujing:
+    type: string
+    description: 总价
+  n1:
+    type: string
+    description: 创建时间
+  n2:
+    type: string
+    description: 镜架单位
+  n3:
+    type: string
+    description:
+  n4:
+    type: string
+    description:
+  n5:
+    type: string
+    description: 卡号
+  n6:
+    type: string
+    description: 实收
+  n7:
+    type: string
+    description: 验光师
+  pjlx:
+    type: string
+    description: 配镜类型
+  jyYy:
+    type: string
+    description: 眼镜用途 远用/近用
+  jjcl:
+    type: string
+    description: 镜架材料
+  jjxh:
+    type: string
+    description: 镜架型号
+  jjys:
+    type: string
+    description: 镜架颜色
+  zsls:
+    type: string
+    description: 镜片折射率
+  mc:
+    type: string
+    description: 镜片膜层
+  bh:
+    type: string
+    description:
+  sky:
+    type: string
+    description:
+  duanxin:
+    type: string
+    description:
+  created_at:
+    type: date-time
+    description: 创建时间
+  updated_at:
+    type: date-time
+    description: 更新时间
